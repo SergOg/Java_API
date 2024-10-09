@@ -47,7 +47,9 @@ public class MergeSort {
 
         // Рекурсивная сортировка двух половин
         mergeSort(left);
+        System.out.println(Arrays.toString(left));
         mergeSort(right);
+        System.out.println(Arrays.toString(right));
         // Объединение отсортированных половин
         merge(left, right, array);
     }
